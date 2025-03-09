@@ -15,7 +15,7 @@ from azure.iot.device.aio import IoTHubDeviceClient
 from azure.iot.device import Message
 
 # The device connection string to authenticate the device with your IoT hub.
-CONNECTION_STRING = "HostName=full-stack.azure-devices.net;DeviceId=Fullstack_dispositivo;SharedAccessKey=8pxAODVJlY7bR1DlKX4yn+LHi1K2PHWKR2BEjELk7Xo="
+CONNECTION_STRING = os.getenv("CONNECTION_STRING")
 
 MESSAGE_TIMEOUT = 10000
 
